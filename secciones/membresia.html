@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingreso clientes</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="../estilos.css" rel="stylesheet"><!--Llamada css-->
+  </head>
+  <!-------------------------------------------->
+  <body style="overflow-x: hidden;"><!--Use style="overflow-x: hidden;" para ocultar el scrollbar de abajo-->
+    <div class="fixed-top"><!--Este div encierra la barra azul de RRSS y hiperviculos con el menu y navbar para poder fijarlo y baje con scroll-->
+      <div class="topnav row container-fluid-expand-lg ps-2 text-white BarraArriba"><!--Barra amarilla arriba(row)-->
+        <!--Columna izquierda RRSS-->
+        <div class="col-4 ps-5 ">
+          <!--Youtube-->
+          <a class="col-4 translate-middle rounded align-content-center" target="_blank" href="https://www.youtube.com"><img src="https://img.icons8.com/color/30/000000/youtube-play.png"/></a>
+          <!--Instagram-->
+          <a class="col-4 rounded align-content-center" target="_blank" href="https://www.instagram.com"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/></a>
+          <!--Facebook-->
+          <a class="col-4 rounded align-content-center" target="_blank" href="https://www.facebook.com"><img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/></a>
+        </div>
+  
+        <!--columna vacia para tirar a los costados el contenido-->
+        <div class="col-4 align-content-center"></div>
+        <!--Paginas hypervinculo-->
+  
+        <!--Text-decoration-none para quitar el subrayado-->
+        <div class=" col-4">
+          <a class="pe-2 text-light text-decoration-none" href="./comocomprar.html">Cómo comprar</a>
+          <a class="pe-2 text-light text-decoration-none" href="./contactanos.html">Contáctanos</a>
+          <a class="pe-2 text-light text-decoration-none" href="../secciones/consultApi.html">Encuentra tu animal favorito</a>
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------------------------------->
+  
+      <!--Menu navbar, logo-->
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="col-4">
+            <a class="ps-5" href="../index.html"><img src="../Imagenes/LogoPerro.png" style="width: 50px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!--Categorias, ofertas, ingresar, login-->
+          <div class="col-4 justify-content-center collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="../secciones/Alimento.html">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="../secciones/Correas.html">Correas</a></li>
+                  <li><a class="dropdown-item" href="../secciones/Higiene.html">Higiene</a></li>
+                  <li><a class="dropdown-item" href="../secciones/Bandanas.html">Bandanas</a></li>
+                  <li><a class="dropdown-item" href="../secciones/ropa.html">Ropa</a></li>
+                  <li><a class="dropdown-item" href="../secciones/placas.html">Identificadores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html #ofertas">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../secciones/login.html">Ingresar</a>
+              </li>
+            </ul>
+            <!--Barra de busqueda-->
+            <form class="input-group ps-3 pe-3 d-flex">
+                <input class="me-2 form-control" type="search" placeholder="Busca aquí" aria-label="Search">
+                <button class="btn btn-light btn-outline-secondary" type="submit"><img src="https://img.icons8.com/fluency/25/000000/search.png"/></button>
+            </form>
+            <a href="../secciones/Carro.html"><img src="https://img.icons8.com/fluency/48/000000/shopping-cart-loaded.png"/></a> <!--Imagen carrito hypervinculo a carrito-->
+          </div>
+          <div class="col-4"></div><!--tercer bloque a la derecha-->
+        </div>
+      </nav>
+    </div><!--revisar linea 15 para info-->
+  <!--------------------------------------------------------------->
+  <!--membership cards-->
+  <div class="pt-5 mt-5 container-fluid table-responsive">
+    <div class="membership-pricing-table">
+        <table>
+            <tbody><tr>
+                <th></th>
+                <th class="plan-header plan-header-free">
+            <div class="pricing-plan-name">Gratis</div>
+            <div class="pricing-plan-price">
+                <sup>$</sup>0<span></span>
+            </div>
+            <div class="pricing-plan-period">Mensual</div>
+            </th>
+            <th class="plan-header plan-header-blue">
+            <div class="pricing-plan-name">Basico</div>
+            <div class="pricing-plan-price">
+                <sup>$</sup>4990<span></span>
+            </div>
+            <div class="pricing-plan-period">Mensual</div>
+            </th>
+            <th class="plan-header plan-header-blue">
+            <div class="pricing-plan-name">Media</div>
+            <div class="pricing-plan-price">
+                <sup>$</sup>9.990<span></span>
+            </div>
+            <div class="pricing-plan-period">Mensual</div>
+            </th>
+            <th class="plan-header plan-header-standard">
+              <div class="header-plan-inner">
+                <!--<span class="plan-head"> </span>-->
+                <span class="recommended-plan-ribbon">RECOMENDADO</span>
+                <div class="pricing-plan-name">PRO</div>
+                <div class="pricing-plan-price">
+                  <sup>$</sup>14.990<span></span>
+                </div>
+                <div class="pricing-plan-period">Mensual</div>
+              </div>
+            </th>
+            </tr>
+            <tr>
+                <td>Plan actual: </td>
+                <td class="action-header">
+                    <a class="btn btn-info">
+                        Gratis
+                    </a>
+                </td>
+                <td class="action-header">
+                    <a class="btn btn-info">
+                        Contratar
+                    </a>
+                </td>
+                <td class="action-header">
+                    <div class="current-plan">
+                        <div class="with-date">Plan actual</div>
+                        <div><em class="smaller block">Renueva Mayo 19, 2022</em></div>
+                    </div> 
+                </td>
+                <td class="action-header">
+                    <a class="btn btn-success">
+                        Mejorar
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Descuento en articulos seleccionados:</td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle"></span></td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle">x</span></td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle">x</span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle">x</span></td>
+            </tr>
+            <tr>
+                <td>Envio gratis:</td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle"></span></td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle">x</span></td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle">x</span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle">x</span></td>
+            </tr>
+            <tr>
+                <td>regalito gratis en tu compra:</td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle"></span></td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle"></span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle">x</span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle">x</span></td>
+            </tr>
+            <tr>
+                <td>35% Dscto cada martes:</td>
+                <td><span class="icon-no glyphicon glyphicon-remove-circle"></span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle"></span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle"></span></td>
+                <td><span class="icon-yes glyphicon glyphicon-ok-circle">x</span></td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--NO TOCAR!!!!-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- https://bootsnipp.com/snippets/5M12R -->

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos.css">
+
+    <title>Placas</title>
+</head>
+<body>
+
+  <div class="fixed-top"><!--Este div encierra la barra azul de RRSS y hiperviculos con el menu y navbar para poder fijarlo y baje con scroll-->
+    <div class="topnav row container-fluid-expand-lg ps-2 text-white BarraArriba"><!--Barra amarilla arriba(row)-->
+      <!--Columna izquierda RRSS-->
+      <div class="col-4 ps-5 ">
+        <!--Youtube-->
+        <a class="col-4 translate-middle rounded align-content-center" target="_blank" href="https://www.youtube.com"><img src="https://img.icons8.com/color/30/000000/youtube-play.png"/></a>
+        <!--Instagram-->
+        <a class="col-4 rounded align-content-center" target="_blank" href="https://www.instagram.com"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/></a>
+        <!--Facebook-->
+        <a class="col-4 rounded align-content-center" target="_blank" href="https://www.facebook.com"><img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/></a>
+      </div>
+
+      <!--columna vacia para tirar a los costados el contenido-->
+      <div class="col-4 align-content-center"></div>
+      <!--Paginas hypervinculo-->
+
+      <!--Text-decoration-none para quitar el subrayado-->
+      <div class=" col-4">
+        <a class="pe-2 text-light text-decoration-none" href="./comocomprar.html">Cómo comprar</a>
+        <a class="pe-2 text-light text-decoration-none" href="./contactanos.html">Contáctanos</a>
+        <a class="pe-2 text-light text-decoration-none" href="../secciones/consultApi.html">Encuentra tu animal favorito</a>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------->
+
+    <!--Menu navbar, logo-->
+    <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="col-4">
+          <a class="ps-5" href="../index.html"><img src="../Imagenes/LogoPerro.png" style="width: 50px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Categorias, ofertas, ingresar, login-->
+        <div class="col-4 justify-content-center collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="../secciones/Alimento.html">Alimentos</a></li>
+                <li><a class="dropdown-item" href="../secciones/Correas.html">Correas</a></li>
+                <li><a class="dropdown-item" href="../secciones/Higiene.html">Higiene</a></li>
+                <li><a class="dropdown-item" href="../secciones/Bandanas.html">Bandanas</a></li>
+                <li><a class="dropdown-item" href="../secciones/ropa.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="../secciones/placas.html">Identificadores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html #ofertas">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../secciones/login.html">Ingresar</a>
+            </li>
+          </ul>
+          <!--Barra de busqueda-->
+          <form class="input-group ps-3 pe-3 d-flex">
+              <input class="me-2 form-control" type="search" placeholder="Busca aquí" aria-label="Search">
+              <button class="btn btn-light btn-outline-secondary" type="submit"><img src="https://img.icons8.com/fluency/25/000000/search.png"/></button>
+          </form>
+          <a href="../secciones/Carro.html"><img src="https://img.icons8.com/fluency/48/000000/shopping-cart-loaded.png"/></a> <!--Imagen carrito hypervinculo a carrito-->
+        </div>
+        <div class="col-4"></div><!--tercer bloque a la derecha-->
+      </div>
+    </nav>
+  </div><!--revisar linea 15 para info-->
+
+    <div class="container">
+
+        <h1 class="fw-light text-center mt-4 mb-0">Placas </h1>
+      
+        <hr class="mt-2 mb-5">
+      
+        <div class="row text-center text-lg-start">
+      
+          <div class="col-lg-3 col-md-4 col-6"> 
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes\Placas\1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6" style="height: 200px;">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail " src="../Imagenes/Placas/2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/4.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/5.jpg" alt="">
+            </a>
+          </div>
+          <br> <br><br><br><br>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="../secciones/Carro.html" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="../Imagenes/Placas/8.jpg" alt="">
+            </a>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!--NO TOCAR!!!!-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
