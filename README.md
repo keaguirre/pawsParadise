@@ -1,8 +1,7 @@
 # projectoSemestralWeb
 
 # REV 1.0 07-04-2022:
-## Primera revision 
-# Pendientes a revisar y desarrollar para la REV2.0:
+## Pendientes a revisar y desarrollar para la REV2.0:
     -[x] Agregar formulario de registro y  || Solo email
     -[x] Mejorar el login || FUE ACTUALIZADO CON BLOQUE DINAMICO
     -[x] Actualizar los banners del carrousel de home
