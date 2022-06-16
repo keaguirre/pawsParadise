@@ -1,0 +1,4 @@
+#archivo para instalar los requerimientos de la pagina
+#CMD pip install -r requirements.txt
+django == 4.0.4
+pillow

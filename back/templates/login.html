@@ -1,0 +1,183 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicia sesión</title>
+    <!--vEngine CSS-->
+    <link rel="stylesheet" href="{% static '../static/vEngine/css/validationEngine.jquery.css' %}" type="text/css"/>
+    <!--CSS-->
+    <link rel="stylesheet" href={% static '../static/estilos.css' %}>
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'><!--font-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Iconos Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <!-------------------------------------------->
+<body class="bodyRegistro1" id="bodylogin bodylogin1" style="overflow-x: hidden;" >
+  <!----------------------------------------------->
+  <div class="fixed-top"><!--Este div encierra la barra azul de RRSS y hiperviculos con el menu y navbar para poder fijarlo y baje con scroll-->
+    <div class="topnav row container-fluid-expand-lg ps-2 text-white BarraArriba"><!--Barra amarilla arriba(row)-->
+      <!--Columna izquierda RRSS-->
+      <div class="col-4 ps-5 ">
+        <!--Youtube-->
+        <a class="col-4 translate-middle rounded align-content-center" target="_blank" href="https://www.youtube.com"><img src="https://img.icons8.com/color/30/000000/youtube-play.png"/></a>
+        <!--Instagram-->
+        <a class="col-4 rounded align-content-center" target="_blank" href="https://www.instagram.com"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/></a>
+        <!--Facebook-->
+        <a class="col-4 rounded align-content-center" target="_blank" href="https://www.facebook.com"><img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/></a>
+      </div>
+
+      <!--columna vacia para tirar a los costados el contenido-->
+      <div class="col-4 align-content-center"></div>
+      <!--Paginas hypervinculo-->
+
+      <!--Text-decoration-none para quitar el subrayado-->
+      <div class=" col-4">
+        <a class="pe-2 text-light text-decoration-none" href="comocomprar">Cómo comprar</a>
+        <a class="pe-2 text-light text-decoration-none" href="contactanos">Contáctanos</a>
+        <a class="pe-2 text-light text-decoration-none" href="consultapi">Encuentra tu animal favorito</a>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------->
+
+    <!--Menu navbar, logo-->
+    <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="col-4">
+          <a class="ps-5" href="{% url 'backhome'%}"><img src="{% static 'Imagenes\LogoPerro.png' %}" style="width: 50px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Categorias, ofertas, ingresar, login-->
+        <div class="col-4 justify-content-center collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="alimento">Alimentos</a></li>
+                <li><a class="dropdown-item" href="correas">Correas</a></li>
+                <li><a class="dropdown-item" href="higiene">Higiene</a></li>
+                <li><a class="dropdown-item" href="bandanas">Bandanas</a></li>
+                <li><a class="dropdown-item" href="ropa">Ropa</a></li>
+                <li><a class="dropdown-item" href="placas">Identificadores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'backhome'%}">Ofertas</a>
+            </li>
+            <!-- INGRESAR ELIMINADO -->
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login">Ingresar</a>
+            </li> -->
+          </ul>
+          <!--Barra de busqueda-->
+          <form class="input-group ps-3 pe-3 d-flex caja-barra-busqueda">
+              <input class="me-2 form-control barra-busqueda" type="search" placeholder="Busca aquí" aria-label="Search">
+              <button class="btn btn-light btn-outline-secondary" type="submit"><img src="https://img.icons8.com/fluency/25/000000/search.png"/></button>
+          </form>
+
+
+          <a class=" d-flex" href="carro">
+            <button class="boton-carro btn" type="submit">
+                <i class="bi-cart-fill me-1"></i>
+                Carro
+                <span class="badge contador-carro text-white ms-1 rounded-pill">0</span>
+            </button>
+           </a><!--Imagen carrito hypervinculo a carrito-->
+
+           <a class=" d-flex" href="login">
+            <button class="boton-perfil btn" type="submit">
+                <i class="persona-perfil bi bi-person-lines-fill"></i>
+            </button>
+           </a><!--Imagen Persona hypervinculo a Perfil/inicio de sesión-->
+        
+        </div>
+        <div class="col-4"></div><!--tercer bloque a la derecha-->
+      </div>
+    </nav>
+  </div><!--revisar linea 15 para info-->
+
+  <!----------------------------------------------->
+<!--Registration form-->
+  <div class="formbox1" style="text-align: center;">
+    <form id="loginForm" class="formRegistro1"  action="/validarusuario" method="post" name="login">
+      {% csrf_token %}
+      <ul class="list-unstyled">
+        <li class="headerRegistro1">
+          <p>Inicia sesión</p>
+          <img class="logoperro" src="{% static 'Imagenes\LogoPerro.png' %}" alt="logo perro">
+        </li>
+        <li class="descriptionRegistro1">
+          <p>Ingresa con tu e-mail y contraseña de <a style="color: rgb(255, 158, 0)" href="{% url 'backhome'%}">tiendafachera.cl</a></p>
+          <p>Si no tienes cuenta con nosotros, <a style="color: rgb(255, 158, 0)" href="registro1">Registrate aquí!</a></p>
+        </li>
+        <!--Ingreso de email-->
+        <li class="inputRegistro1">
+          <input type="email" class="buttonRegistro1 textbox validate[required,custom[email]]" data-errormessage-custom-error="Formato: tunombre@ejemplo.com" id="email" name="email" placeholder="tunombre@ejemplo.com">
+        </li><br>
+        <!--Ingreso de password-->
+        <li class="inputRegistro1">
+          <input type="password" class="buttonRegistro1 textbox validate[required]" data-errormessage-value-missing="Ingrese contraseña" id="password" name="password" placeholder="Contraseña">
+        </li>
+        <!--Boton submit-->
+        <br>
+        <li>
+          <input class="submit buttonRegistro1" type="submit" name="submit" id="submitLogin" value="Inicia sesión">
+        </li>
+      </ul>
+    </form>
+  </div>
+
+<!--NO TOCAR!!!!-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Validation Engine scripts-->
+    <script src="{% static '../static/vEngine/js/jquery.validationEngine-en.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static '../static/vEngine/js/jquery.validationEngine.js' %}" type="text/javascript" charset="utf-8"></script>
+  
+    <!----JScript---------------------------------------------->
+    <script>
+      $("#loginForm").validationEngine({promptPosition : "centerRight"});
+      /*$(document).ready(function(){  
+        $("#submitLogin").css("background-color", "gray");
+        $("#submitLogin").css("color", "white");
+        jQuery("#loginForm").validationEngine('attach', {
+          promptPosition : "centerRight",
+          onValidationComplete: function(form, status){
+            if (status){
+              $("#submitLogin").css("background-color", "rgb(255, 107, 0)");
+              $("#submitLogin").css("color", "white");
+            }
+            else{
+              $("#submitLogin").css("background-color", "red");
+              $("#submitLogin").css("color", "white");
+            }
+          }
+        });
+      });*/
+    </script>
+  </body>
+</html>
