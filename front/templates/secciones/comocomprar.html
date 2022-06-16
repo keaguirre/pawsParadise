@@ -1,0 +1,211 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Como Comprar</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href={% static '../static/estilos.css' %}>
+    <!--Bootstrap ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!--icono wsp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body style="overflow-x: hidden;" ><!--Use style="overflow-x: hidden;" para ocultar el scrollbar de abajo-->
+    <!----------------------------------------------->
+    
+    <div class="fixed-top"><!--Este div encierra la barra azul de RRSS y hiperviculos con el menu y navbar para poder fijarlo y baje con scroll-->
+      <div class="topnav row container-fluid-expand-lg ps-2 text-white BarraArriba"><!--Barra amarilla arriba(row)-->
+        <!--Columna izquierda RRSS-->
+        <div class="col-4 ps-5 ">
+          <!--Youtube-->
+          <a class="col-4 translate-middle rounded align-content-center" target="_blank" href="https://www.youtube.com"><img src="https://img.icons8.com/color/30/000000/youtube-play.png"/></a>
+          <!--Instagram-->
+          <a class="col-4 rounded align-content-center" target="_blank" href="https://www.instagram.com"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/></a>
+          <!--Facebook-->
+          <a class="col-4 rounded align-content-center" target="_blank" href="https://www.facebook.com"><img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/></a>
+        </div>
+  
+        <!--columna vacia para tirar a los costados el contenido-->
+        <div class="col-4 align-content-center"></div>
+        <!--Paginas hypervinculo-->
+  
+        <!--Text-decoration-none para quitar el subrayado-->
+        <div class=" col-4">
+          <a class="pe-2 text-light text-decoration-none" href="comocomprar">Cómo comprar</a>
+          <a class="pe-2 text-light text-decoration-none" href="contactanos">Contáctanos</a>
+          <a class="pe-2 text-light text-decoration-none" href="consultapi">Encuentra tu animal favorito</a>
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------------------------------->
+  
+      <!--Menu navbar, logo-->
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="col-4">
+            <a class="ps-5" href="{% url 'backhome'%}"><img src="{% static 'Imagenes\LogoPerro.png' %}" style="width: 50px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!--Categorias, ofertas, ingresar, login-->
+          <div class="col-4 justify-content-center collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="alimento">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="correas">Correas</a></li>
+                  <li><a class="dropdown-item" href="higiene">Higiene</a></li>
+                  <li><a class="dropdown-item" href="bandanas">Bandanas</a></li>
+                  <li><a class="dropdown-item" href="ropa">Ropa</a></li>
+                  <li><a class="dropdown-item" href="placas">Identificadores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'backhome'%}">Ofertas</a>
+              </li>
+              <!-- INGRESAR ELIMINADO -->
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login">Ingresar</a>
+              </li> -->
+            </ul>
+            <!--Barra de busqueda-->
+            <form class="input-group ps-3 pe-3 d-flex caja-barra-busqueda">
+                <input class="me-2 form-control barra-busqueda" type="search" placeholder="Busca aquí" aria-label="Search">
+                <button class="btn btn-light btn-outline-secondary" type="submit"><img src="https://img.icons8.com/fluency/25/000000/search.png"/></button>
+            </form>
+  
+  
+            <a class=" d-flex" href="carro">
+              <button class="boton-carro btn" type="submit">
+                  <i class="bi-cart-fill me-1"></i>
+                  Carro
+                  <span class="badge contador-carro text-white ms-1 rounded-pill">0</span>
+              </button>
+             </a><!--Imagen carrito hypervinculo a carrito-->
+  
+             <a class=" d-flex" href="login">
+              <button class="boton-perfil btn" type="submit">
+                  <i class="persona-perfil bi bi-person-lines-fill"></i>
+              </button>
+             </a><!--Imagen Persona hypervinculo a Perfil/inicio de sesión-->
+          
+          </div>
+          <div class="col-4"></div><!--tercer bloque a la derecha-->
+        </div>
+      </nav>
+    </div><!--revisar linea 15 para info-->
+    
+    <!------------------Como comprar info----------------------------->
+    <div class="container-fluid px-4 pt-5 my-5 text-center">
+      <h1 class="display-5 fw-bold">Como comprar</h1>
+      <div class="col-lg-6 mx-auto">
+        <hp class="lead mb-4">Aqui podras encontrar los pasos para saber como comprar en nuestra web</p>
+        <!--Agregar un collapse aqui-->
+      </div>
+      
+    </div>
+    <div class="container" id="CajaComoCompra">
+      <div class="col-12 col md-12 box-compra ">
+        <section><!--Cuadro info como comprar-->
+          <ul>
+            <strong>» Si eres nuevo en esta pagina si eres un cliente nuevo son muy faciles ya que poseemos: </strong>
+            <li>
+              un proceso de compra rapido, simple e intuitivo.
+            </li>
+            <li>
+              Descuentos semanales y exclusivos para los usuarios suscritos a nuestra pagina.
+            </li>
+            <li>
+              Opcion de retiro en tienda o de compra.
+            </li>
+            <br><br><br>
+          </ul>
+          <ul>
+            <strong>¿Como comprar?:</strong>
+            <li>
+              Paso 1 : Buscar y seleccionar el producto dentro de las opciones que tenemos.
+            </li>
+            <li>
+              Paso 2 : Agregar los productos en el carrito de compras. 
+            </li>
+            <li>
+              Paso 3 : Verifica los datos y los precios que aparecen en pantalla y elige el metodo de compra.
+            </li>
+            <li>
+              Paso 4 : Serás redireccionado a la pagina de pago para que puedas realizar el pago seguro.
+            </li>
+            <li>
+              Paso 5 : luego de elegir el tipo de compra se rellenan los datos faltantes y ya estaría listo.
+            </li>
+          </ul>
+        </section>
+      </div>
+  </div>
+<br><br>
+  <!--Pie de pagina-->
+<hr>
+<div class="container footer">
+  <div class="row ">
+<div class="col-12 col-sm-7 col-md-3 logo box "><a class="ps-5" href=""><img src="{% static 'Imagenes/LogoPerro.png' %}" style="width: 80px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a></div>
+<div class="col-12 col-sm-5 col-md-3 box">
+    <h4>¿Ayuda?</h4>
+    <ul>
+      <li><a id="link-cms-page-3-3" class="cms-page-link" href="comocomprar" title="Nuestros términos y condiciones">Términos y condiciones</a></li>
+      <li><a id="link-static-page-contact-3" class="cms-page-link" href="contactanos" title="Contáctanos">Contacta con nosotros</a></li>
+    </ul>
+</div>
+<div class="col-12 col-sm-6 col-md-3 box">
+    <h4>Síguenos</h4>
+    <div class="col-12 ">
+      <ul class="list-inline nav">
+        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" rel="noopener"> <img src="{% static 'Imagenes\Facebook-color.svg' %}" class="img-fluid" alt="facebook"> </a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank" rel="noopener"> <img src="{% static 'Imagenes\YouTube-color.svg' %}" class="img-fluid" alt="youtube"> </a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank" rel="noopener"> <img src="{% static 'Imagenes\Instagram-color.svg' %}" class="img-fluid" alt="instagram"> </a></li>
+      </ul>
+    </div>
+    <a href="contactanos" class="btn-mas-articulos top">Trabaja con nosotros</a>
+    <p><span><img src="{% static 'Imagenes\icon-lock-color.svg' %}"></span> Compra 100% segura</p>
+</div>
+<div class="col-12 col-sm-6 col-md-3 box">
+    <ul class="list-inline">
+      <li class="list-inline-item-2"><a href=""> <img src="{% static 'Imagenes\img-pagos.jpg' %}" class="img-fluid img-pagos" alt="pagod"> </a></li>
+    </ul>
+</div>
+<div class="col-12 col-sm-3 mt-3">
+    <ul>
+      <li class="direccion-footer"><a id="link-custom-page-Gerónimo de Alderete 1567, Vitacura, Santiago de Chile-1" href="https://www.google.com/maps/place/Puppies+%26+Kittens/@-33.388736,-70.564129,15z/data=!4m5!3m4!1s0x0:0x5ba738b1b22220a6!8m2!3d-33.3887363!4d-70.5641291?hl=es-ES" title="" target="_blank" rel="noopener"> <img src="https://img.icons8.com/material-rounded/20/000000/home.png"/> Casa matriz: Gerónimo de Alderete 1567, Vitacura, Santiago de Chile. </a><span class="space-between"></span> <a  href="index.html" title=""> ventas@ProyectoSemestral.cl </a><span class="space-between"></span> <br><i class="fa fa-whatsapp"></i><a id="link-custom-page-+562 2202 6095-1" href="tel:+569 90882642 " title=""> +56 9 5370 6688  </a><span class="space-between"></span> <br><img src="https://img.icons8.com/ios-glyphs/20/000000/iphone.png"/><a id="link-custom-page-+562 2202 6095-1" href="tel:+569 90882642 " title=""> (2) 2202 6095  </a></li>
+    </ul>
+</div>
+<div class="col-12 col-sm-3 mt-3">
+    <ul>
+      <li class="direccion-footer"><a id="link-custom-page-Gerónimo de Alderete 1522, Vitacura, Santiago de Chile-1" href="https://goo.gl/maps/4G9agzg2dTr5Qx217" title="" target="_blank" rel="noopener"> <img src="https://img.icons8.com/material-rounded/20/000000/home.png"/> Nueva Sucursal: Gerónimo de Alderete 1522, Vitacura, Santiago de Chile. </a><span class="space-between"></span> <br><img src="https://img.icons8.com/ios-glyphs/20/000000/iphone.png"/></i><a> Teléfono Tienda</a><a href="tel:23324 8246" title="" target="_blank" rel="noopener"> (2) 3324 8246</a><a><br> <br> </a><span class="space-between"></span></li>
+    </ul>
+</div>
+<div class="col-12 col-sm-3 mt-3">
+    <ul>
+      <li class="direccion-footer"><a id="link-custom-page-Avenida Egaña 252, La Reina, Santiago de Chile-1" href="https://goo.gl/maps/7oMxvvMFYbD4bV1s5" title="" target="_blank" rel="noopener"> <img src="https://img.icons8.com/material-rounded/20/000000/home.png"/> Nueva Sucursal: Avenida Egaña 252, local 1, La Reina, Santiago de Chile. </a><span class="space-between"></span> <br><img src="https://img.icons8.com/ios-glyphs/20/000000/iphone.png"/></i><a> Teléfono Tienda</a><a href="tel:224279569" title="" target="_blank" rel="noopener"> (2) 2427 9569</a><span class="space-between"></span> <br><i class="fa fa-whatsapp"></i><a> Whatsapp</a><a href="https://api.whatsapp.com/send?phone=56974425217" title="" target="_blank" rel="noopener"> +569 7442 5217</a></li>
+    </ul>
+</div>
+<div class="col-12 col-sm-3 mt-3">
+    <ul>
+      <li class="direccion-footer"><a id="link-custom-page-AvenidaLas Condes 12751, Local 01 y 07, Santiago de Chile" href="https://goo.gl/maps/xen6RzvWURMMwHwy6" title="" target="_blank" rel="noopener"> <img src="https://img.icons8.com/material-rounded/20/000000/home.png"/> Nueva Sucursal: Avenida Las Condes 12751, Local 01 y 07, Santiago de Chile. </a><span class="space-between"></span> <br><img src="https://img.icons8.com/ios-glyphs/20/000000/iphone.png"/></i><a> Teléfono Tienda Perro</a><a href="tel:222427062" title="" target="_blank" rel="noopener"> (2) 2242 7062</a> <span class="space-between"></span> <br><img src="https://img.icons8.com/ios-glyphs/20/000000/iphone.png"/></i><a> Teléfono Tienda Gato</a><a href="tel:222434336" title="" target="_blank" rel="noopener"> (2) 2243 4336</a><span class="space-between"></span> <br><i class="fa fa-whatsapp"></i><a> Whatsapp</a><a href="https://api.whatsapp.com/send?phone=56974425129" title="" target="_blank" rel="noopener"> +569 7442 5129</a></li>
+    </ul>
+</div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  
+  
+  </body>
+</html>
