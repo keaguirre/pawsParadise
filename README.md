@@ -1,16 +1,4 @@
 # projectoSemestralWeb
-# Pendientes!
-- Hacer cuadrar los elementos de la barra superiores en todas las subpaginas
-- # Alinear version móvil
-- # Imagenes de carrusel de tamaño dinámico
-- Boton suscribirse
-- Submenu de categorias
-
-# lista cambios con fecha
-## - 05/04:
-    - Borro id BarraArriba y lo reemplazo por una clase en las etiquetas html y css para poder reutilizar el color de la barra superior
-    - Agregado icono con hypervinculo de carrito a la navbar superior
-    - Agregado el logo de la pagina al login
 
 # REV 1.0 07-04-2022:
 ## Primera revision 
@@ -29,7 +17,7 @@
 
 # REV 2.0 - 10/05/2022:
 ## Pendientes a revisar y desarrollar para la REV3.0:
-	-[x] Instalar Django
+	-[x] Instalar Django || Agregada la guia de Django.md
 	-[x] Configurar: 
 		-[x] Modelos
 		-[x] Vistas
@@ -41,4 +29,3 @@
 	-[x] Crear interaccion con sqlite logeando un usuario
 	-[ ] Registrar usuario desde formulario html en la base de datos
 	-[ ] Que el usuario pueda eliminar su cuenta desde su perfil
-	
