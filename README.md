@@ -28,3 +28,11 @@
 	-[x] Crear interaccion con sqlite logeando un usuario
 	-[x] Registrar usuario desde formulario html en la base de datos
 	-[x] Que el usuario pueda eliminar su cuenta desde su perfil
+	
+#REV 3.0 11/07/2022
+##Edits finales:
+-[x] Hecho un cierre de sesion para el usuario
+-[x] Pagina de administracion que: Ingresa, Modifica y Elimina productos
+-[x] Se renuevan las secciones y se cargan los productos a las secciones correspondientes desde la base de datos segun categoria de producto
+-[x] Se implementa la API para consumo
+-[x] Cambios menores de estetica y correccion de errores
