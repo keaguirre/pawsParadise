@@ -1,0 +1,288 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+  <!--  All snippets are MIT license http://bootdey.com/license -->
+  <title>Perfil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!--CSS-->
+      <link rel="stylesheet" href={% static '../static/estilos.css' %}>
+      <!--Iconos Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+</head>
+<body style="background-color: #f0f2f9 ;">
+  <br><br><br><br>
+  <div class="fixed-top"><!--Este div encierra la barra azul de RRSS y hiperviculos con el menu y navbar para poder fijarlo y baje con scroll-->
+    <div class="topnav row container-fluid-expand-lg ps-2 text-white BarraArriba"><!--Barra amarilla arriba(row)-->
+      <!--Columna izquierda RRSS-->
+      <div class="col-4 ps-5 ">
+        <!--Youtube-->
+        <a class="col-4 translate-middle rounded align-content-center p-0" target="_blank" href="https://www.youtube.com"><img src="https://img.icons8.com/color/30/000000/youtube-play.png"/></a>
+        <!--Instagram-->
+        <a class="col-4 rounded align-content-center p-0" target="_blank" href="https://www.instagram.com"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/></a>
+        <!--Facebook-->
+        <a class="col-4 rounded align-content-center p-0" target="_blank" href="https://www.facebook.com"><img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"/></a>
+      </div>
+
+      <!--columna vacia para tirar a los costados el contenido-->
+      <div class="col-4 align-content-center"></div>
+      <!--Paginas hypervinculo-->
+
+      <!--Text-decoration-none para quitar el subrayado-->
+      <div class=" col-4">
+        <a class="pe-2 text-light text-decoration-none" href="comocomprar">Cómo comprar</a>
+        <a class="pe-2 text-light text-decoration-none" href="contactanos">Contáctanos</a>
+        <a class="pe-2 text-light text-decoration-none" href="consultapi">Encuentra tu animal favorito</a>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------->
+
+    <!--Menu navbar, logo-->
+    <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="col-4">
+          <a class="ps-5" href="{% url 'backhome'%}"><img src="{% static 'Imagenes\LogoPerro.png' %}" style="width: 50px;" alt="LogoDePerro"> <span style="font-size: large; font-family: cursive; color: rgb(23, 23, 23);">TiendaFachera</span></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Categorias, ofertas, ingresar, login-->
+        <div class="col-4 justify-content-center collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="alimento">Alimentos</a></li>
+                <li><a class="dropdown-item" href="correas">Correas</a></li>
+                <li><a class="dropdown-item" href="higiene">Higiene</a></li>
+                <li><a class="dropdown-item" href="bandanas">Bandanas</a></li>
+                <li><a class="dropdown-item" href="ropa">Ropa</a></li>
+                <li><a class="dropdown-item" href="placas">Identificadores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'backhome'%}">Ofertas</a>
+            </li>
+            <!-- INGRESAR ELIMINADO -->
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login">Ingresar</a>
+            </li> -->
+          </ul>
+          <!--Barra de busqueda-->
+          <form class="input-group ps-3 pe-3 d-flex caja-barra-busqueda">
+              <input class="me-2 form-control barra-busqueda" type="search" placeholder="Busca aquí" aria-label="Search">
+              <button class="btn btn-light btn-outline-secondary" type="submit"><img src="https://img.icons8.com/fluency/25/000000/search.png"/></button>
+          </form>
+
+
+          <a class=" d-flex" href="carro">
+            <button class="boton-carro btn" type="submit">
+                <i class="bi-cart-fill me-1"></i>
+                Carro
+                <span class="badge contador-carro text-white ms-1 rounded-pill">0</span>
+            </button>
+           </a><!--Imagen carrito hypervinculo a carrito-->
+
+           <a class=" d-flex" href="/perfil">
+            <button class="boton-perfil btn" type="submit">
+                <i class="persona-perfil bi bi-person-lines-fill"></i>
+            </button>
+           </a><!--Imagen Persona hypervinculo a Perfil/inicio de sesión-->
+        
+        </div>
+        <div class="col-4"></div><!--tercer bloque a la derecha-->
+      </div>
+    </nav>
+  </div><!--revisar linea 15 para info-->
+  <!-----------------CUERPO PAGINA---------------->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row flex-lg-nowrap">
+      <div class="col-12 col-lg-auto mb-3" style="width: 260px;">
+        <div class="w-100 card p-3 fondo-azul border-0">
+          <div class="e-navlist e-navlist--active-bg">
+            <ul class="nav list-unstyled">
+              <li class="nav-item fs-5"><a class="nav-link px-2 active text-light" href="#"><i
+                    class="fa fa-fw fa-bar-chart mr-1"></i><span>Perfil</span></a>
+              </li>
+              <li class="nav-item fs-5"><a class="nav-link px-2 text-light" href="admin_productos"
+                  target="__blank"><i class="fa fa-fw fa-th mr-1"></i><span>Administracion</span></a>
+              </li>
+              <li class="nav-item fs-5"><a class="nav-link px-2 text-light"
+                  href="perfil" target="__blank"><i
+                    class="fa fa-fw fa-cog mr-1"></i><span>Configuraciones</span></a>
+              </li>
+              <li class="nav-item fs-5"><a class="nav-link px-2 text-light"
+                href="/api/traerProductos" target="__blank"><i
+                  class="bi bi-server mr-1"></i><span>API</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col mb-3 ">
+            <div class="card fondo-azul">
+              <div class="card-body">
+                <div class="e-profile">
+                  <ul class="nav bg-light rounded-3 fs-5 borde-azul border-3">
+                    <li class="nav-item"><a class="rounded-3 active nav-link border-light border-2" style="color: #4650a8 ;">Configuraciones</a></li>
+                  </ul>
+                  <div class="tab-content pt-3">
+                    <div class="tab-pane active">
+                      <form class="form text-light fs-5" novalidate="">
+                        <div class="row">
+                          <div class="col">
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nombre completo</label>
+                                  <input class="form-control borde-azul border-2" type="text" name="name" placeholder="Nombre"
+                                    value="">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nombre de usuario</label>
+                                  <input class="form-control borde-azul border-2" type="text" name="username" placeholder="Tu usuario"
+                                    value="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Correo electrónico</label>
+                                  <input class="form-control borde-azul border-2" type="text" placeholder="usuario@ejemplo.com">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Dirección de entrega</label>
+                                  <input class="form-control borde-azul border-2" type="text" placeholder="Av. falsa #123">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 mb-3">
+                            <div class="mb-2"><b>Cambiar contraseña</b></div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Contraseña</label>
+                                  <input class="form-control borde-azul border-2" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nueva contraseña</label>
+                                  <input class="form-control borde-azul border-2" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Confirmar <span class="d-none d-xl-inline">contraseña</span></label>
+                                  <input class="form-control borde-azul border-2" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 text-light rounded-3 mt-5 col-sm-4 offset-sm-1" style="height: 180px ;">
+                            <div class="mb-2"><b>Sigamos en contacto</b></div>
+                            <div class="row">
+                              <div class="col">
+                                <label>Notificaciones al correo</label>
+                                <div class="custom-controls-stacked px-2">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-blog"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-blog">Publicaciones online</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-news"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-news">Boletín informativo</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-offers"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-offers">Ofertas</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col d-flex justify-content-end">
+                            <button class="btn btn-success border-success border-2 me-5 fs-5" type="submit">Cambiar mi información</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card mb-3 border-light border-3">
+              <div class="card-body fondo-azul rounded-3">
+                <div class="px-xl-3">
+                  <form action="/cerrar_sesion" method="post" name="logoutButton"><!--form logout-->
+                    {% csrf_token %}
+                    <br>
+                    <button class="btn btn-block btn-secondary" type="submit">
+                      <i class="fa fa-sign-out"></i>
+                      <span class="fs-5" id="cierreSesion">Cerrar sesión</span>
+                    </button>
+                  </form><br><br>
+                  <h6 class="card-title font-weight-bold fs-5 text-light">Soporte</h6>
+                  <a href="contactanos"><button type="button" class="btn btn-primary fondo-naranjo borde-naranjo fs-5">Contáctanos</button></a><br><br>
+                  <form action="/eliminar_cuenta" method="post" name="deleteaccountbutton">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger fs-5">Eliminar cuenta</button>
+                  </form><br>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+    body {
+      margin-top: 20px;
+      background: #f8f8f8
+    }
+  </style>
+
+  <script type="text/javascript">
+
+  </script>
+  <!--NO TOCAR!!!!-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
