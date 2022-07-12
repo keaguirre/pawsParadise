@@ -26,5 +26,5 @@
 	-[x] Insertar validationEngine
 	-[x] Crear pagina de usuario para despues de logear
 	-[x] Crear interaccion con sqlite logeando un usuario
-	-[ ] Registrar usuario desde formulario html en la base de datos
-	-[ ] Que el usuario pueda eliminar su cuenta desde su perfil
+	-[x] Registrar usuario desde formulario html en la base de datos
+	-[x] Que el usuario pueda eliminar su cuenta desde su perfil
