@@ -1,38 +1,37 @@
-# projectoSemestralWeb
+# Tienda fachera <hr>
 
-# REV 1.0 07-04-2022:
-## Pendientes a revisar y desarrollar para la REV2.0:
-    -[x] Agregar formulario de registro y  || Solo email
-    -[x] Mejorar el login || FUE ACTUALIZADO CON BLOQUE DINAMICO
-    -[x] Actualizar los banners del carrousel de home
-    -[x] Arreglar el menu de categorias
-    -[x] Boton flotante suscribe || REEMPLAZADO POR MEJOR BANNER EN EL CARROUSEL
-    -[x] Arreglar y mejorar login
-    -[x] Crear registro
-    -[x] Añadir eventos sin recargar la pagina con JScript || BLOQUE DINAMICO EN PAGINA DE REGISTRO
-    -[x] Implementar cartas con boton de agregar al carro en categorias de items
-    -[x] Mejorar el subsite de suscribe
-	-[] Investigar como hacer un carrito
+# Contexto
+Un grupo de amigas comenzó la venta de productos para mascotas como bandanas, correas e
+identificaciones mediante redes sociales, todo esto para ayudar a una fundación sin fines de lucro. 
+Debido a la alta demanda a través de las redes sociales, se ha contactado a los alumnos del Duoc UC
+para que puedan ayudarles a construir una aplicación web que
+permita a sus usuarios elaborar listas de compras con la intención de permitir a las amigas a ordenar sus
+presupuestos, mejorar sus finanzas, realizar el aporte a la fundación sin fines de lucro y mejorar la venta y el
+despacho de sus productos.
 
-# REV 2.0 - 10/05/2022:
-## Pendientes a revisar y desarrollar para la REV3.0:
-	-[x] Instalar Django || Agregada la guia de Django.md
-	-[x] Configurar: 
-		-[x] Modelos
-		-[x] Vistas
-		-[x] URLs
-	-[x] Crear dos apps, front y back End
-	-[x] Definir y crear modelo de sqlite en Django
-	-[x] Insertar validationEngine
-	-[x] Crear pagina de usuario para despues de logear
-	-[x] Crear interaccion con sqlite logeando un usuario
-	-[x] Registrar usuario desde formulario html en la base de datos
-	-[x] Que el usuario pueda eliminar su cuenta desde su perfil
-	
-# REV 3.0 11/07/2022
-## Edits finales:
-	-[x] Hecho un cierre de sesion para el usuario
-	-[x] Pagina de administracion que: Ingresa, Modifica y Elimina productos
-	-[x] Se renuevan las secciones y se cargan los productos a las secciones correspondientes desde la base de datos segun categoria de producto	
-	-[x] Se implementa la API para consumo
-	-[x] Cambios menores de estetica y correccion de errores
+# Descripción 
+Esta aplicación web es el encargo semestral solicitado para la asignatura de Programación Web con el fin de aprender sobre herramientas web, partiendo por conceptos básicos en Html, Css, Javascript y Django y DjangoRestFramework para el desarrollo del BackEnd.
+
+# Características 
+## Dentro de todas las cualidades la aplicación es capas de hacer:
+- Registro de clientes para acceder a los servicios de venta.
+- Compras por parte del cliente, descontando los productos del stock una vez creada la venta y realizar descuentos en caso de tratarse de una promoción o de un cliente suscrito.
+- Para los usuarios registrados el sistema debe permitir ver un historial de ventas realizadas, además del estado del despacho de ventas.
+- Para el despacho de los productos, el sistema web debe entregar una taza de seguimiento en caso de los envíos a domicilio de los clientes registrados, mostrando una fecha y hora en que se toma el pedido, se despacha y es recibido po el cliente, cerrando el ciclo.
+- El sistema debe permitir a los usuarios registrados poder subscribirse o desuscribirse de la donación a la fundación sin fines de lucro.
+- Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, promociones o descuentos.
+- El sistema debe permitir mostrar las opciones deacuerdo con los perfiles de cada usuario.
+
+# Galería (placeholder)
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> <img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> <img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> <img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> <img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> <img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%"></img> 
+
+# Diagrama de flujo (placeholder)
+<img src="https://via.placeholder.com/800x512?text=Diagrama">
+
+# Versiones de software
+### - Django 4.1.4
+### - djangorestframework 3.14.0
+
+# Estudiantes
+### Benjamin Paredes: [@BenjaminWuff](https://www.github.com/BenjaminWuff)
+### Kevin Aguirre: [@keaguirre](https://www.github.com/keaguirre)
