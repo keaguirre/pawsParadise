@@ -35,3 +35,4 @@ Esta aplicación web es el encargo semestral solicitado para la asignatura de Pr
 # Estudiantes
 ### Benjamin Paredes: [@BenjaminWuff](https://www.github.com/BenjaminWuff)
 ### Kevin Aguirre: [@keaguirre](https://www.github.com/keaguirre)
+### Johan Dahlbokum: [@DAHLNOV](https://github.com/DAHLNOV/)<br>
