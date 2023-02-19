@@ -44,16 +44,26 @@
 - [x] Creación de .gitignore
 - [x] Creación de requirements
 
+## 18/02 Commit
+- [x] Ajustes al todo, reordenado y evaluadas las tareas
+- [x] Ajustes mínimos de models.py en back
+- [x] Comienzo de diseño de base de datos
+
 # 3.1 Post semestre
 # To Do:
-- [] Evaluación de tareas para completar requerimientos
-- [] Crear role base login y registro, ajustes a la plataforma en base a esto
-- [] Compras en la app
-- [] Cliente registrado, historial de compras
-- [] Historial, revisión de estado de la compra (Pendiente, completada, procesando, enviada)
-- [] Integración de sistema de descuentos mediante cupones o suscripción
-- [] Seguimiento de los pedidos integrando fecha y hora de la compra y fecha de envio.
-- [] Suscribirse o desuscribirse de la donación mensual a la fundación.
-- [] Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, promociones o descuentos.
-- [] El sistema debe permitir mostrar las opciones deacuerdo con los perfiles de cada usuario.
-- [] Revisión de Mobile first
+- [x] Evaluación de tareas para completar requerimientos
+- [x] Comenzar Diseño Base de datos
+- [ ] Investigar rolebase, terminar diseño base datos
+- [ ] Base de datos oracle
+- [ ] Crear role base login y registro, ajustes a la plataforma en base a esto.
+- [ ] Cliente registrado, historial de compras
+- [ ] El sistema debe permitir mostrar y ver el perfil del usuario.
+- [ ] Suscribirse o desuscribirse de la donación mensual a la fundación.
+- [ ] Integración de sistema de descuentos, mediante cupones o suscripción
+- [ ] Compras en la app, asignacion de compra al usuario logeado
+- [ ] Historial, revisión de estado de la compra (Pendiente, completada, procesando, enviada), mostrar detalle y codigo de envio si aplica.
+- [?] Seguimiento de los pedidos integrando fecha y hora de la compra y fecha de envio.
+- [ ] Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, promociones o descuentos.
+- [ ] Contact Form.
+- [ ] Revisión de Mobile first e interfaces.
+- [ ] ChartJS
