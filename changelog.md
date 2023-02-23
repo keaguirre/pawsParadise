@@ -57,6 +57,7 @@
 - [-] Investigar rolebase (descartado)
 - [-] Base de datos oracle (descartada, falta de documentacion)
 - [x] Base de datos sqlite
+- [x] Creada carpeta de documentos con informacion del proyecto
 
 # 3.1 Post semestre
 # To Do:
