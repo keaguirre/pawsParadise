@@ -10,8 +10,6 @@ class Usuario(models.Model):
     password = models.CharField(max_length=15, default='default_value')
     #dir_entrega = models.CharField(max_length=40, default='default_value') #nullable
     #pedidos = models.ForeignKey(Pedido, on_delete=models.PROTECT)
-    #donante
-    #rol
 
     def __str__(self):
         return self.nombre
