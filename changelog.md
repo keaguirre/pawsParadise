@@ -49,13 +49,20 @@
 - [x] Ajustes mínimos de models.py en back
 - [x] Comienzo de diseño de base de datos
 
-# 3.1 Post semestre
-# To Do:
+## 23/02 Commit
 - [x] Evaluación de tareas para completar requerimientos
 - [x] Comenzar Diseño Base de datos
-- [ ] Investigar rolebase, terminar diseño base datos
-- [ ] Base de datos oracle
-- [ ] Crear role base login y registro, ajustes a la plataforma en base a esto.
+- [x] Manejo de paginas x usuario mediante tipos de cuenta y logins
+- [x] Terminar diseño base datos
+- [-] Investigar rolebase (descartado)
+- [-] Base de datos oracle (descartada, falta de documentacion)
+- [x] Base de datos sqlite
+
+# 3.1 Post semestre
+# To Do:
+- [-] Crear role base login y registro, ajustes a la plataforma en base a esto.
+- [ ] Crear login clientes
+- [ ] Crear perfil usuarios y cambiar ruta de perfil a perfil de personal
 - [ ] Cliente registrado, historial de compras
 - [ ] El sistema debe permitir mostrar y ver el perfil del usuario.
 - [ ] Suscribirse o desuscribirse de la donación mensual a la fundación.
@@ -65,5 +72,5 @@
 - [?] Seguimiento de los pedidos integrando fecha y hora de la compra y fecha de envio.
 - [ ] Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, promociones o descuentos.
 - [ ] Contact Form.
+- [ ] ChartJS en item administracion en perfil de personal tienda.
 - [ ] Revisión de Mobile first e interfaces.
-- [ ] ChartJS
