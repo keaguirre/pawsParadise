@@ -59,8 +59,12 @@
 - [x] Base de datos sqlite
 - [x] Creada carpeta de documentos con informacion del proyecto
 
+## 24/02 Commit
+- [x] Implementación de nuevos modelos para base de datos(diagrama en /Documentos)
+
 # 3.1 Post semestre
 # To Do:
+- [ ] Adaptar la pagina para consumir los nuevos modelos creados y borrar modelos antiguos completando la migracion
 - [-] Crear role base login y registro, ajustes a la plataforma en base a esto.
 - [ ] Crear login clientes
 - [ ] Crear perfil usuarios y cambiar ruta de perfil a perfil de personal
