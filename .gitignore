@@ -34,4 +34,9 @@ venv.bak/
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+admin/admin/__pycache__
+admin/front/__pycache__
+admin/back/__pycache__
+admin/api/__pycache__
+admin/api/migrations/__pycache__
 
