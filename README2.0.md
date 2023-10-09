@@ -1,4 +1,6 @@
-# Tienda fachera
+# Paws paradise
+
+## After rework version
 
 # Contexto
 Un grupo de amigas comenzó la venta de productos para mascotas como bandanas, correas e
@@ -22,31 +24,18 @@ Esta aplicación web es el encargo semestral solicitado para la asignatura de Pr
 - Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, promociones o descuentos.
 - El sistema debe permitir mostrar las opciones deacuerdo con los perfiles de cada usuario.
 
-# Galería
-# Inicio
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/Home.png">
-
-# Carrito
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/Cart.png">
-
-# Login
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/Login.png">
-
-# Inicio de administrador
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/AdminHome.png">
-
-# Administración de productos
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/AdminProducts.png">
-
-# Como comprar
-<img src="https://raw.githubusercontent.com/keaguirre/tiendaFacherita/main/PreviewImages/Before/FAQ.png">
-
+# Galería (placeholder)
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
+<img src="https://via.placeholder.com/342x707?text=Placeholder" width="30%">
 
 # Versiones de software
 ### - Django 4.1.4
 ### - djangorestframework 3.14.0
 
-# Estudiantes
-### Benjamin Paredes: [@BenjaminWuff](https://www.github.com/BenjaminWuff)
+# Collaborators
 ### Kevin Aguirre: [@keaguirre](https://www.github.com/keaguirre)
-### Johan Dahlbokum: [@DAHLNOV](https://github.com/DAHLNOV/)<br>
+### María Mellado: [@Cheskalala](https://github.com/Cheskalala)
