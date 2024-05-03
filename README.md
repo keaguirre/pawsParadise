@@ -1,4 +1,4 @@
-# Tienda fachera
+# Paws Paradise
 
 # Contexto
 Un grupo de amigas comenzó la venta de productos para mascotas como bandanas, correas e
